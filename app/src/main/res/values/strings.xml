@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="location_label">Location:</string>
+    <string name="temperature_label">Temperature:</string>
+    <string name="temperature_value">%1.1f °C</string>
+    <string name="wind_speed_label">Wind speed:</string>
+    <string name="wind_speed_value">%1.1f m/s</string>
+    <string name="observation_time_label">Time:</string>
+
+    <string name="error_location_not_found">No weather data found for the location</string>
+</resources>
