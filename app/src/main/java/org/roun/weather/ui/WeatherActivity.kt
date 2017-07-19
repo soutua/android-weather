@@ -38,6 +38,12 @@ class WeatherActivity : LifecycleActivity() {
         }
     }
 
+    override fun onStart() {
+        super.onStart()
+        val weatherViewModel = ViewModelProviders.of(this).get(WeatherViewModel::class.java)
+        weatherViewModel.refresh(this)
+    }
+
     private fun updateUI(weatherData: WeatherData?) {
         if (weatherData != null) {
             if (!weatherData.weatherDescriptions.isEmpty()) {
